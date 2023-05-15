@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Filters ,Digest , Data ,Controller</title>
+    <script src="../angular.min.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+  </head>
+  <body ng-app="Module2App">
+     <div ng-controller="Module2AppController">
+       <button type="button" name="button" ng-click="changeName()" >To{{letterchange}}</button>
+        <p> {{name}} at price of  {{ price | currency:"KES" :3 }} </p>
+     </div>
+  </body>
+</html>
