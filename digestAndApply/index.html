@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Digest And Apply</title>
+    <script src="../angular.min.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+  </head>
+  <body ng-app="CounterApp">
+      <h2>Digest And Apply Code</h2>
+      <div ng-controller="CounterAppController">
+         <button type="button" name="button" ng-click="Increment()">Increment</button>
+         <p>{{ counter }}</p>
+         <button type="button" name="button" ng-click="Decrement()">Decrement</button>
+       </div>
+  </body>
+</html>
