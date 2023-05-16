@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>NgRepeat</title>
+    <script src="../angular.min.js" charset="utf-8"></script>
+    <script src="app.js" charset="utf-8"></script>
+  </head>
+  <body ng-app="NgRepeatApp">
+      <h2>Ng Repeat Shopping List</h2>
+      <div ng-controller="NgRepeatAppController">
+          <!-- loops over items  -->
+          <label for="search">Search : </label><input ng-model="search.product_name">
+          <ul>
+            <li ng-repeat="item in shoppingproducts | filter :search"> {{ $index }} - {{ item.product_name }} -{{ item.currency }} -{{ item.price }} </li>
+          </ul>
+       </div>
+  </body>
+</html>
